@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type:none
+}
+
+/* CREACION DE VARIABLES DE COLOR */
+
+:root {
+    --A1-color: rgb(24, 39, 72);
+    --A2-color: rgb(193, 252, 1);    
+}
+
+/* ESTILO DE BLOQUES */
+
+body{
+    background-color:white ;
+    color: var(--A1-color);
+    font-family: "Nunito Sans", sans-serif;
+    text-align:left
+}
+
+header{
+    background-color: var(--A2-color);
+}
+
+footer{
+    background-color: var(--A2-color);
+}
+
+/* ESTILO DE TEXTOS */
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem; 
+    margin:30px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+#contacto{
+    color: var(--A1-color);
+    margin: 5px 5px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* ESTILO DE IMAGENES */
+
+.logo{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.img-inicio {
+    width:fit-content; 
+}
+
+.img-servicios {
+    width: 150px; 
+    height: 150px; 
+}
+
+.img-nosotros {
+    width: 100px; 
+    height: 100px; 
+}
+
+.img-contacto {
+    width: 25px; 
+    height: 25px;
+}
+
+.img-in{
+    width:35px;
+}
+
+/* ESTILO CAJAS */
+
+/* MENU */
+
+.container-menu{
+    background-color: var(--A2-color);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 13vh;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 5px;
+}
+
+.menu ul li{
+    margin: 10px 5px;
+}
+
+.menu a{
+    display: inline-block;
+    width: 93px;
+    text-align: center;
+    background-color: var(--A1-color);
+    color: var(--A2-color);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    align-items: center;
+    height: 7vh;
+}
+
+.iconos{
+    display: flex;
+    margin: 5px 10px;
+    background-color: var(--A1-color);
+    width:fit-content;
+    height: fit-content;
+    border-radius: 5px;
+
+}
+.iconos a{
+    display: flex;
+    margin: 3px 3px;
+    align-items: center;    
+}
+
+/* INICIO */
+
+#banner{
+    color: white;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: flex-start;
+    background-image: url("../imagenes/ciudad1.jpg");
+    background-size:auto;
+    background-position: left;
+}
+
+#banner h1{
+    text-align: left;
+    font-size:3.25rem;
+    max-width: 600px;
+    margin:0 0;
+}
+
+#banner p{
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: var(--A2-color);
+    max-width: 700px;
+}
+
+/* SERVICIOS */
+
+.generico-servicios{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin:10px;
+    flex-direction: row;  
+}
+
+.servicio{
+    display:flex;
+    flex-direction: column;
+    margin:5px;
+    align-items: center;
+    text-align: center;
+    width:30%;
+    min-width: 250px;
+}
+
+.servicio div{
+    margin:10px;
+}
+
+/* NOSOTROS */
+
+.generico-nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px;
+    margin-top:50px;
+    margin-bottom: 50px;;
+    flex-direction: row;    
+}
+
+.nosotros{
+    display:flex;
+    flex-direction: column;
+    margin:15px;
+    align-items: center;
+    text-align: center;
+    width:30%;
+    min-width: 250px;
+}
+
+.nosotros div{
+    margin:10px;
+}
+
+/* CLIENTES - ESTILO CARROUSEL */
+
+.generico-clientes{
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-container {
+    display: flex ;
+    overflow-x: auto;
+    border: 2px solid #ddd;
+    margin: 110px 150px;
+}
+
+.carousel-container img {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 220px;
+}
+
+/* FORMULARIO */
+
+.escribinos{
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 30px;
+}
+
+.formulario input,
+.formulario textarea, 
+.formulario select {
+    width: 100%; 
+    max-width: 400px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: baseline;
+}
+
+.radio-option input {
+    width: 10px;  
+    height: 10px; 
+    max-width: 10px; 
+    max-height: 10px;
+}
+
+.radio-option label{
+    margin:0 10px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.checkbox input {
+    width: 10px;  
+    height: 10px; 
+    max-width: 10px; 
+    max-height: 10px;
+}
+
+.checkbox label{
+    margin:0 10px;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.boton-enviar:hover {
+    background-color: var(--A2-color)
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {  
+    
+    /* MENU */ 
+
+    .container-menu{
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction: column;    
+    }
+
+    .logo{
+        justify-content: center;
+    }
+       
+    .logo img {
+        width: 250px;
+    }
+
+    /* INICIO */
+
+    #banner h1{
+        font-size:2.65rem;
+    }
+    
+    #banner p{
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    /* SERVICIOS */
+
+    .container-servicios {
+        flex-direction: column;
+    }
+
+    .servicio{
+        width:80%;
+    }
+
+    /* NOSOTROS */
+
+    .container-nosotros {
+        flex-direction: column;    
+    }
+    
+    .nosotros{
+        width:80%;
+    }
+    
+    /* CLIENTES */
+
+    .carousel-container {
+        flex-direction: column;
+        overflow-x: unset;
+        border: #ffffff;
+        margin: 30px;
+    }
+    
+    .carousel-container img {
+        height: auto;
+    }
+
+    /* CONTACTO */
+
+    .formulario input,
+    .formulario textarea, 
+    .formulario select {
+        max-width: 100%; 
+    }
+}
+
+@media screen and (max-width: 425px){
+    
+    /* MENU */
+    
+    .container-menu{
+        display: grid;
+        justify-content: center;
+    }
+
+    /* INICIO */
+
+    #banner h1{
+        font-size:2.1rem;
+    }
+    
+    #banner p{
+        font-size: 1.15rem;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}

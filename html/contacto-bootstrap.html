@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style-prosit-bootstrap.css">
+    <title>Prosit</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="font-family: 'Nunito Sans', sans-serif;">
+    <header class="bg-white shadow-sm">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a href="index.html" class="mb-3 mb-md-0">
+                <img src="../imagenes/logo.jpg" alt="Logo Prosit" class="img-fluid" style="height: 60px;">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav flex-column flex-md-row text-center text-md-start w-100 justify-content-center justify-content-md-end gap-2 gap-md-4 p-0 m-0">
+                    <li class="nav-item"><a class="nav-link text-dark" href="../index-bootstrap.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="servicios-bootstrap.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="clientes-bootstrap.html">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="nosotros-bootstrap.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="contacto-bootstrap.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <h1 class="mb-3">Formulario de contacto</h1>
+        <p class="escribinos">Escribinos y nos comunicaremos con vos.</p>
+      
+        <form action="/submit" method="post" class="row g-3">
+      
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre y Apellido</label>
+            <input type="text" id="nombre" class="form-control">
+          </div>
+      
+          <div class="col-md-6">
+            <label for="empresa" class="form-label">Empresa</label>
+            <input type="text" id="empresa" class="form-control">
+          </div>
+      
+          <div class="col-md-6">
+            <label for="provincia" class="form-label">Provincia</label>
+            <select id="provincia" class="form-select">
+              <option selected disabled>Seleccioná una provincia</option>
+              <option value="cordoba">Córdoba</option>
+              <option value="buenosaires">Buenos Aires</option>
+              <option value="santafe">Santa Fe</option>
+              <option value="salta">Salta</option>
+              <option value="mendoza">Mendoza</option>
+              <option value="jujuy">Jujuy</option>
+              <option value="neuquen">Neuquén</option>
+              <option value="formosa">Formosa</option>
+            </select>
+          </div>
+      
+          <div class="col-md-6">
+            <label for="mail" class="form-label">Mail</label>
+            <input type="email" id="mail" class="form-control">
+          </div>
+      
+          <div class="col-md-6">
+            <label for="celular" class="form-label">Celular</label>
+            <input type="tel" id="celular" class="form-control">
+          </div>
+      
+          <div class="col-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea id="mensaje" rows="4" class="form-control"></textarea>
+          </div>
+      
+          <div class="col-12">
+            <label class="form-label d-block">Servicio solicitado</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="servicio" id="costos">
+              <label class="form-check-label" for="costos">Costos eléctricos</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="servicio" id="estadisticas">
+              <label class="form-check-label" for="estadisticas">Estadísticas de consumo</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="servicio" id="otros">
+              <label class="form-check-label" for="otros">Otro</label>
+            </div>
+          </div>
+      
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="suscribe">
+              <label class="form-check-label" for="suscribe">
+                Prefiero que me contacten por WhatsApp
+              </label>
+            </div>
+          </div>
+      
+          <div class="col-12 text-end">
+            <input type="submit" value="Enviar" class="btn boton-enviar">
+          </div>
+      
+        </form>
+      </section>
+
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container text-center">
+            <p class="mb-3 fs-5">A donde encontrarnos</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="https://www.instagram.com/prositanalytics?igsh=MXZnNmQ1dHNjaDJoeQ%3D%3D&utm_source=qr"
+                    target="_blank"><img src="../imagenes/ig.png" alt="Instagram" style="height: 30px;">
+                </a>
+                <a href="https://www.linkedin.com/company/prosit-analytics/" target="_blank"><img src="../imagenes/in.png"
+                    alt="LinkedIn" style="height: 30px;">
+                </a>
+                <a href="mailto:info@prositanalytics.com" target="_blank"><img src="../imagenes/mail.png" alt="Email" style="height: 30px;">
+                </a>
+                <a href="https://wa.me/3517011325" target="_blank"><img src="../imagenes/wa.png" alt="WhatsApp" style="height: 30px;">
+                </a>       
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
