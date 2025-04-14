@@ -28,10 +28,6 @@ header{
     background-color: var(--A2-color);
 }
 
-footer{
-    background-color: var(--A2-color);
-}
-
 /* ESTILO DE TEXTOS */
 
 h1{
@@ -47,13 +43,6 @@ h2{
 
 p{
     font-size: 1rem;
-}
-
-#contacto{
-    color: var(--A1-color);
-    margin: 5px 5px;
-    font-weight: bold;
-    margin-left: 10px;
 }
 
 /* ESTILO DE IMAGENES */
@@ -74,15 +63,6 @@ p{
 .img-nosotros {
     width: 100px; 
     height: 100px; 
-}
-
-.img-contacto {
-    width: 25px; 
-    height: 25px;
-}
-
-.img-in{
-    width:35px;
 }
 
 /* ESTILO CAJAS */
@@ -122,29 +102,6 @@ p{
     text-decoration: none;
     padding: 5px;
     border-radius: 50px;
-}
-
-/* FOOTER */
-
-.footer{
-    display: flex;
-    align-items: center;
-    height: 7vh;
-}
-
-.iconos{
-    display: flex;
-    margin: 5px 10px;
-    background-color: var(--A1-color);
-    width:fit-content;
-    height: fit-content;
-    border-radius: 5px;
-
-}
-.iconos a{
-    display: flex;
-    margin: 3px 3px;
-    align-items: center;    
 }
 
 /* INICIO */
