@@ -66,10 +66,6 @@ p{
     margin-left: 15px;
 }
 
-.img-inicio {
-    width:fit-content; 
-}
-
 .img-servicios {
     width: 150px; 
     height: 150px; 
@@ -154,7 +150,8 @@ p{
 /* INICIO */
 
 #banner{
-    color: white;
+    color:var(--A1-color);
+    background-color: var(--A1-color);
     height: 80vh;
     display: flex;
     flex-direction: column;
