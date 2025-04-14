@@ -150,7 +150,7 @@ p{
 /* INICIO */
 
 #banner{
-    color:var(--A1-color);
+    color:white;
     background-color: var(--A1-color);
     height: 80vh;
     display: flex;
