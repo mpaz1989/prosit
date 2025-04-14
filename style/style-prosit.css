@@ -115,6 +115,9 @@ p{
     flex-direction: column;
     padding: 30px;
     justify-content: flex-start;
+}
+
+#banner{
     background-image: url("../imagenes/ciudad1.jpg");
     background-size:auto;
     background-position: left;
